@@ -14,7 +14,9 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'view-password-component', loadChildren: './components/view-password-component/view-password-component.module#ViewPasswordComponentPageModule' },
+  { path: 'view-password-list-component', loadChildren: './components/view-password-list-component/view-password-list-component.module#ViewPasswordListComponentPageModule' }
 ];
 
 @NgModule({
