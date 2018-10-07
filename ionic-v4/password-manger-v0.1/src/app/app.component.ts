@@ -19,6 +19,11 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'View Password List',
+      url: '/view-password-list',
+      icon: 'list'
     }
   ];
 
