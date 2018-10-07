@@ -1,0 +1,7 @@
+{
+  "name": "password-manger-v0.1",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
