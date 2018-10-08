@@ -4,16 +4,16 @@
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-title>View Article</ion-title>
+        
+        <button class="btn btn-link" style="float: right; padding: 0 12px;" (click)="redirectToFeed()">
+            <i class="far fa-newspaper"></i>
+        </button>
     
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card>
+    <ion-card *ngIf="showArticle">
         <ion-img [src]="individualArticle.urlToImage"></ion-img>
         <ion-card-header>
             <ion-card-title>{{individualArticle.title}}</ion-card-title>
