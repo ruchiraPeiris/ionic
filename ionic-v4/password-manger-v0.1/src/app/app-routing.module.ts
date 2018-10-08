@@ -26,7 +26,12 @@ const routes: Routes = [
     {
         path: 'save-password',
         loadChildren: './components/save-password-component/save-password-component.module#SavePasswordComponentPageModule'
+    },
+    {
+        path: 'view-individual',
+        loadChildren: './components/view-individual-component/view-individual-component.module#ViewIndividualComponentPageModule'
     }
+
 
 ];
 

@@ -11,6 +11,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {ViewPasswordComponentPageModule} from './components/view-password-component/view-password-component.module';
 import {ViewPasswordListComponentPageModule} from './components/view-password-list-component/view-password-list-component.module';
 import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
     declarations: [AppComponent],
@@ -21,7 +22,8 @@ import {FormsModule} from '@angular/forms';
         AppRoutingModule,
         ViewPasswordComponentPageModule,
         ViewPasswordListComponentPageModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
     providers: [
         StatusBar,

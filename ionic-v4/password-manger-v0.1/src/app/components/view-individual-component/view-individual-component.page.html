@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>View Article</ion-title>
+    
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-img [src]="individualArticle.urlToImage"></ion-img>
+        <ion-card-header>
+            <ion-card-title>{{individualArticle.title}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p>{{individualArticle.description}}</p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

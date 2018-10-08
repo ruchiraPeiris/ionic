@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {NewsServiceService} from '../../services/news-service.service';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-view-password-component',
@@ -6,11 +8,26 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./view-password-component.page.scss'],
 })
 export class ViewPasswordComponentPage implements OnInit {
+    data;
 
-    constructor() {
+    constructor(private newsService: NewsServiceService, private  router: Router) {
     }
 
     ngOnInit() {
+        this.getNews();
+    }
+
+    getNews() {
+        this.newsService.getData('everything?q=bitcoin&from=2018-09-08&sortBy=publishedAt')
+            .subscribe(data => {
+                console.log(data);
+                this.data = data;
+            });
+    }
+
+    onGoToIndividual(article) {
+        this.newsService.currentArticle = article;
+        this.router.navigate(['/view-individual']);
     }
 
 }

@@ -29,6 +29,11 @@ export class AppComponent {
             title: 'Save Password',
             url: '/save-password',
             icon: 'fa-save'
+        },
+        {
+            title: 'View News',
+            url: '/view-password',
+            icon: 'fa-newspaper'
         }
     ];
 
