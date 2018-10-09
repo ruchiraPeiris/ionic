@@ -30,6 +30,10 @@ const routes: Routes = [
     {
         path: 'view-individual',
         loadChildren: './components/view-individual-component/view-individual-component.module#ViewIndividualComponentPageModule'
+    },
+    {
+        path: 'save-load',
+        loadChildren: './components/save-load-component/save-load-component.module#SaveLoadComponentPageModule'
     }
 
 

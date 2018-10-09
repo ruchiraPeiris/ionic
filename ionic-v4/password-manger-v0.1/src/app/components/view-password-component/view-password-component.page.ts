@@ -18,9 +18,8 @@ export class ViewPasswordComponentPage implements OnInit {
     }
 
     getNews() {
-        this.newsService.getData('everything?q=bitcoin&from=2018-09-08&sortBy=publishedAt')
+        this.newsService.getData('everything?q=bitcoin&from=2018-09-09&sortBy=publishedAt')
             .subscribe(data => {
-                console.log(data);
                 this.data = data;
             });
     }
