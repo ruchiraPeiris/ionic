@@ -4,7 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'login',
         pathMatch: 'full'
     },
     {
@@ -34,6 +34,10 @@ const routes: Routes = [
     {
         path: 'save-load',
         loadChildren: './components/save-load-component/save-load-component.module#SaveLoadComponentPageModule'
+    },
+    {
+        path: 'login',
+        loadChildren: './components/login-page/login-page.module#LoginPagePageModule'
     }
 
 
